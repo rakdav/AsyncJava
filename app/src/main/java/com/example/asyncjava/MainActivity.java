@@ -43,6 +43,16 @@ public class MainActivity extends AppCompatActivity {
         }
 
         @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+
+        @Override
+        protected void onProgressUpdate(Void... values) {
+            super.onProgressUpdate(values);
+        }
+
+        @Override
         protected Bitmap doInBackground(String... strings)
         {
             String url=strings[0];
